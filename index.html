@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <header class="header" id="header">
+       
+        <section class="hd--content-position">
+
+            <h1 class="hd--titulo hd--titulo-1 " >Hola,</h1>
+            <h1 class="hd--titulo">yo soy Martin,</h1>
+            <h1 class="hd--titulo">web developer</h1>
+            <!-- <p class="hd--text">Martin Volpini</p> -->
+            <a href="#contacto" class="hd--cont--btn" >
+                <input type="button" class="hd--btn-contacto hd--btn" value="Contacto">
+            </a>
+            <a  href="#main" class="hd--cont--btn" >
+                <input type="button" class="hd--btn-info hd--btn" value="Info">
+            </a>
+            
+        
+        </section>
+
+<!-- ---- -----NAV ----  -->
+        <button class="nav-toggle" aria-label="Abrir menu">
+            <img class="nav-toggle--item" src="./img/menu-burger.png"> <!--ESTE ES EL ICONO DE AMBURGUESA  "-->
+         </button>
+
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="li-items"><a href="#header" class="nav-items nav-items-1">Home</a></li>
+                <li class="li-items"><a href="#main"   class="nav-items">Info</a></li>
+                <li class="li-items"><a href="#proyectos" class="nav-items">Proyectos</a></li>
+                <li class="li-items"><a href="#skills" class="nav-items">Skills</a></li>
+                <li class="li-items"><a href="#contacto" class="nav-items">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+<!--  ---------   ---------------   SOBRE MI------------------    -----------------    ------------->
+    <section class="main-conteiner-country">
+
+        <main class="sections main" id="main">
+            <h2 class="main-titulo">Programador jr. Martin Volpini</h2>
+            <div class="main-subrayado"></div>
+            <div class="box-content">
+    
+                <article class=" box--1">
+                    <img src="./img/martin.jpg" alt="imagen" class="box--1--img">
+                </article>
+    
+                <article class=" box--2">
+                    <h3 class="box--2--titulo">CAMINO RECORRIDO</h3>
+    
+                    <p class="box--2--text">
+                        Todo empezó en Agosto del 2020. Un amigo con el que vivía empezó a estudiar diseño web en CoderHous para cambiar su carrera.
+                        Me puse a hacer el curso junto con mi amigo, cuestión mi amigo dejo el curso y yo lo termine.
+                    </p><br>
+                    <p class="box--2--text">
+                        Luego de terminar este curso seguí estudiando distintas tecnologías para poder ser un programador más completo, mi intención era ser full stack.
+                        Para lograrlo me inscribí en un programa del gobierno llamado Codo a Codo que tiene esta finalidad, donde resuelve el back-end con Node.js y una base de datos en este caso MySQL que para esa altura era lo que me faltaba realmente.
+                        Termine la cursada a finales del 2022. Me encanto la experiencia, lo que aprendí y la gente que conocí. 
+    
+                    </p><br>
+                    <p class="box--2--text">
+                        Por suerte esto no se termina y uno puede seguir creciendo con nuevas tecnologías y generando nuevos proyectos. 
+                        En este momento me encuentro aprendiendo React y desarrollando nuevos proyectos.
+                       
+                      </p>
+                </article>
+            </div>
+            
+        </main>
+    </section>
+    
+<!--   ------------   --------------- PROYECTOS  ---------------    -------------------   -->
+    <section class="sections proyectos" id="proyectos">
+        <p class="py--subtitulo">PORTFOLIO</p>
+        <h2 class="py--titulo">Proyectos</h2>
+        
+        <div class="py--conteiner">
+            <div class="proyectos--items">
+                <a href="">
+                    <h4 class="py--items--titulo py--items">
+                        Agencia de Publicidad
+                    </h4>
+                    <p class="py--items--text py--items">
+                        Es una app con puro html, css y un poco de javascript.
+                    </p>
+                </a>
+            </div>
+            <div class="proyectos--items">
+                <a href="">
+                    <h4 class="py--items--titulo py--items">
+                       Peticiones CRUD
+                    </h4>
+                    <p class="py--items--text py--items">
+                        Me conecto a una bbdd y con la que puedo interactuar con las típicas acciones básicas. Es una página dinámica. Use Node.js ,npm , express para el Back-end y MySQL en la base.
+                    </p>
+                </a>
+            </div>
+            <div class="proyectos--items">
+                <a href="">
+                    <h4 class="py--items--titulo py--items">
+                      Boostrap WebSite 
+                    </h4>
+                    <p class="py--items--text py--items">
+                        Me centre en crear una linda interfaz con componentes de bootstrap, contenido random y un pequeño front que se encarga de hace unas sumas. 
+                    </p>
+                </a>
+            </div>
+            <div class="proyectos--items">
+                <a href="" class="py--card">
+                    <h4 class="py--items--titulo py--items">
+                        Calculadora
+                    </h4>
+                    <p class="py--items--text py--items">
+                        Es una app clásica con un front-end que hace todo. El propósito es mostrar que domino el lenguaje de JavaScrpt y la lógica de programación.
+                    </p>
+                </a>
+            </div>
+        </div>
+     
+    </section>
+<!-- -----------------    --------- SKILLS  -----------        ----------------------   -->
+    <section class="skills-conteiner-country" id="skills"> 
+        <div class="skills-conteiner">
+        
+            <h3 class="skills-titulo">Skills</h3>
+            <div class="skill-subrayado"></div>
+
+            <div class="conteiner-tec">
+                <img src="./img/html-1.png" alt="html" class="tec-items">
+                <img src="./img/css.png" alt="css" class="tec-items">
+                <img src="./img/js-2.png" alt="JavaScript" class="tec-items">
+                <img src="./img/bootstrap.png" alt="Boostrap" class="tec-items">
+                <img src="./img/sass-4.png" alt="sass" class="tec-items">
+                <img src="./img/node-3.png" alt="node" class="tec-items">
+                <img src="./img/npm-2.png" alt="npm" class="tec-items">
+                <img src="./img/express-9.png" alt="Express" class="tec-items">
+                <img src="./img/mysql-6.png" alt="MySQL" class="tec-items">
+                <img src="./img/git-3.png" alt="Git" class="tec-items">
+                <img src="./img/github-8.3.png" alt="GitHub" class="tec-items">
+                <img src="./img/canva-1-sinFondo.png" alt="Canva" class="tec-items">
+                
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    
+<!-- ----------------- ----- -  CONTACTO  ------------         ----------------       -----  -->
+<section class="contacto-conteiner-country" id="contacto" >
+
+                              <!--Contacto -->
+
+   <form id="contacto" class="contacto" > 
+        <h3 class="form--box form--titulo">Contacto</h3>
+
+        <div class="mb-3 item1">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input class="form-control" id="name" type="text" name="name" placeholder="/..." required>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input class="form-control" id="email" type="email"  name="email" placeholder="/..." required>
+        </div>
+
+        <div class="mb-3 ">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" type="text" name="messaje" placeholder="" required>
+            </textarea>
+        </div>
+
+        <div class="mb-3 ">
+            <button class="form-btn btn-reset" type="reset" value="input">Reset</button>
+            <input class="form-btn btn-submit" id="btn-submit"  type="button"  value="Enviar" />
+        </div>
+
+    </form>   
+</section>
+
+<!-- ----------------- ----- -  CONTACTO  ------------         ----------------       -----  -->
+<section class="contacto-conteiner-country" id="contacto" >
+
+    <!--Contacto -->
+
+<form id="contacto" class="contacto" > 
+<h3 class="form--box form--titulo">Contacto</h3>
+
+<div class="form--box item1">
+<label for="exampleFormControlInput1" class="form-label">Nombre</label>
+<input class="form-control" id="name" type="text" name="name" placeholder="/..." required>
+</div>
+
+<div class="form--box">
+<label for="exampleFormControlInput1" class="form-label">Email</label>
+<input class="form-control" id="email" type="email"  name="email" placeholder="/..." required>
+</div>
+
+<div class="form--box ">
+<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+<textarea class="form-control" id="message" type="text" name="messaje" placeholder="" required>
+</textarea>
+</div>
+
+<div class="form--box ">
+<button class="form-btn btn-reset" type="reset" value="input">Reset</button>
+<input class="form-btn btn-submit" id="btn-submit"  type="button"  value="Enviar" />
+</div>
+
+</form>   
+</section>
+
+<!-- ------------------- -----  FOOTER  ------------    -------------------------    -->
+    <footer class="">
+        <div class="container">
+
+            <ul class="list-inline mb-5">
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/feed/" target="_blank">
+                  <img class="icon-social" src="./img/linkedin.png">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://github.com/MartinVolpini" target="_blank">
+                  <img class="icon-social" src="./img/github-33.png">
+                </a>
+              </li>
+            </ul>              
+            <p class="text-muted small mb-0">Copyright © Your Website 2023</p>
+
+          </div>
+
+    </footer>  
+
+    <div class ="btn-resorte">
+        <a href="#main">
+           <img class="btn-resorte--img" src="./img/icon-flecha-arriba.avif">
+        </a> 
+     </div>               
+</body>
+<script src="index.js"></script>
+</html>
