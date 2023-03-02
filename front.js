@@ -56,6 +56,79 @@ btns.forEach(elemento => {
      })
  } )
 
+ /*-----------------Proyectos--------------------------------------- */
+
+ let tag_a = document.querySelectorAll(".py--items--link")
+
+ let validacion = 0; 
+
+ tag_a.forEach( elemento => { 
+    console.log(elemento);
+    elemento.removeAttribute("href");
+
+   
+    validacion == 0 ? elemento.removeAttribute("href") 
+                    : setTimeout( () => {
+                        validacion = 0  
+                        // console.log(validacion)
+                        } ,9000)
+
+
+    elemento.addEventListener("click",(e)=>{
+        validacion = 1;
+
+        if(elemento == tag_a[0] ){
+            setTimeout(()=>{
+                elemento.setAttribute("href","https://martinvolpini.github.io/camila_agencia.github.io/") 
+          
+            },300) 
+            setTimeout( () => {
+                // console.log(validacion)
+                validacion = 0  
+                elemento.removeAttribute("href")
+                } ,7000)
+        } 
+        else if (elemento == tag_a[1]){
+            setTimeout(()=>{
+                elemento.setAttribute("href","https://martinvolpini.github.io/bbdd_mysql.github.io/") 
+                // console.log("01")
+            },300)
+            setTimeout( () => {
+                // console.log(validacion)
+                validacion = 0  
+                elemento.removeAttribute("href")
+                } ,7000)
+        } 
+        else if (elemento == tag_a[2]){
+            setTimeout(()=>{
+                elemento.setAttribute("href","https://martinvolpini.github.io/Bootstrap5.github.io/") 
+                // console.log("02")
+            },300)
+            setTimeout( () => {
+                // console.log(validacion)
+                validacion = 0  
+                elemento.removeAttribute("href")
+                } ,7000)
+        }  
+        else if (elemento == tag_a[3]){
+            setTimeout(()=>{
+                elemento.setAttribute("href","https://martinvolpini.github.io/calculadora.github.io/") 
+            },300)
+            setTimeout( () => {
+                // console.log(validacion , "")
+                validacion = 0  
+                elemento.removeAttribute("href")
+                } ,7000)
+        }  
+        
+        
+    })
+    
+ })
+
+//  let see = tag_a.getAttribute("href");  see = tag_a.removeAttribute("href");  
+//  console.log(see)
+
 /*---------------------------  FORM  ----------------------------------------------------------- */
 
 let enviar = document.getElementById("btn-submit");
@@ -75,10 +148,11 @@ let sendForm = async()=>{
         headers: {"Content-Type":"application/json"}
     }
 
-    console.log("btn alcanzado", options.body);
-    
-    let peticion  = await fetch(`http://localhost:4200/email`, options)
-    let resultado = await peticion.json()
+    if(_message.value.length > 1 && _nombre.value.length > 1 && _email.value.length > 1){
+        let peticion  = await fetch(`http://localhost:4200/email`, options)
+        let resultado = await peticion.json()
+      
+    } else { alert("No llenaste el formulario") }
   
 }
 
