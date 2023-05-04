@@ -63,7 +63,7 @@ btns.forEach(elemento => {
  let validacion = 0; 
 
  tag_a.forEach( elemento => { 
-    console.log(elemento);
+//     console.log(elemento);
     elemento.removeAttribute("href");
 
    
