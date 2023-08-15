@@ -153,8 +153,6 @@ let sendForm = async()=>{
         let resultado = await peticion.json()
       
     } else { alert("No llenaste el formulario") }
-
-    /*http://portfoliogithubio.up.railway.app/email */
   
 }
 
