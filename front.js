@@ -149,11 +149,7 @@ let sendForm = async()=>{
     }
 
     if(_message.value.length > 1 && _nombre.value.length > 1 && _email.value.length > 1){
-<<<<<<< HEAD
-        let peticion  = await fetch(` http://localhost:4200/email`, options)
-=======
         let peticion  = await fetch(`http://localhost:4200/email`, options)  /* http://portfoliogithubio.up.railway.app/email  */
->>>>>>> 3f7a4fdd6d1eb74dfafe046ce4c19b12351b1bab
         let resultado = await peticion.json()
       
     } else { alert("No llenaste el formulario") }
