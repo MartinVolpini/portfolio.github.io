@@ -2,9 +2,10 @@ const express = require ("express");
 const cors    = require("cors");
 const colors  = require("colors");
 const nodemailer = require("nodemailer");
+// const { send } = require("node-dev/lib/ipc");
 
 const app = express();
-app.set('port',  4200)
+app.set('PORT',  4200)
 
 app.use(cors());
 app.use(express.json());
@@ -55,5 +56,9 @@ app.post('/email', (req, res)=>{
     
 })
 
+app.get(`/`,(req,res)=>{
+    res.send({msg:"Hola TinCode"})
+})
+    
 
-app.listen( app.get('port'), () => { console.log(`EXPRESS puerto ${app.get('port')}`.yellow) } );
+app.listen( app.get('PORT'), () => { console.log(`EXPRESS puerto ${app.get('PORT')}`.yellow) } );
