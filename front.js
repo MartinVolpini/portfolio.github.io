@@ -1,12 +1,15 @@
 "use strick";
+ //------------------ HEADER DESTRABADO----------------------
 const header = document.querySelector(".header");
 const btns = document.querySelectorAll(".hd--btn");
 
-btns.forEach(elemento => { 
-    elemento.addEventListener("click",()=>{  
-        header.style.position = "relative" ;
-     })
- } )
+header.style.position = "relative" ;
+
+// btns.forEach(elemento => { 
+//     elemento.addEventListener("click",()=>{  
+//         header.style.position = "relative" ;
+//      })
+//  } )
 
  //------------------ NAV DESPELGABLE----------------------
 
