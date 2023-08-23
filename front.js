@@ -61,15 +61,32 @@ header.style.position = "relative" ;
 
  /*-----------------Proyectos--------------------------------------- */
 
-  var customButton = document.getElementById("custom-button");
+  let customButton = document.getElementById("custom-button");  
+   
+//   customButton.classList.add("custom-button-active"); 
+  
   
   customButton.addEventListener("touchstart", function() {
     customButton.classList.add("custom-button-active");
+    // alert("evento touchstart")
   });
 
   customButton.addEventListener("touchend", function() {
+    // alert("evento touchend")
     customButton.classList.remove("custom-button-active");
+    
   });
+
+//   customButton.addEventListener("touchenter", function() {
+//     customButton.classList.add("custom-button-active");
+//     alert("evento touchenter")
+//   });
+
+//   customButton.addEventListener("touchout", function() {
+//     alert("evento touchout")
+//     customButton.classList.remove("custom-button-active");
+    
+//   });
 
 
 

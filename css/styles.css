@@ -612,9 +612,11 @@ header::before{
                 background: #576574;
 
             }
-            .custom-button-active{
-                transform: scale( 0.2 );
+            .custom-button-active {
+                transform: scale( 0.2 )!important;
+                /* height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; */
             }
+
             .proyectos--items{
                 margin: 1rem 0rem;
             }
