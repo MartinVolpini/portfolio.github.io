@@ -618,7 +618,7 @@ header::before{
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
             }
             .REVICION:nth-child(3):hover,.proyectos--items:nth-child(3):focus {
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
+                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; opacity: 0.7;
             }
             .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
