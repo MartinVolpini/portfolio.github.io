@@ -61,6 +61,18 @@ header.style.position = "relative" ;
 
  /*-----------------Proyectos--------------------------------------- */
 
+  var customButton = document.getElementById("custom-button");
+  
+  customButton.addEventListener("touchstart", function() {
+    customButton.classList.add("custom-button-active");
+  });
+
+  customButton.addEventListener("touchend", function() {
+    customButton.classList.remove("custom-button-active");
+  });
+
+
+
  let tag_a = document.querySelectorAll(".py--items--link")
 
  let validacion = 0; 

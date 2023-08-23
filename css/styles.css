@@ -610,15 +610,18 @@ header::before{
         @media (max-width:1088px){  
             .py--conteiner{
                 background: #576574;
-                
-            }
 
+            }
+            .custom-button-active{
+                transform: scale( 0.2 );
+            }
             .proyectos--items{
                 margin: 1rem 0rem;
             }
-            .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
+            /* .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
-            }
+           
+            } */
             .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
                 /* height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;  */
                 transform: scale( 1.5 );
