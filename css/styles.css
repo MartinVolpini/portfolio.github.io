@@ -610,6 +610,7 @@ header::before{
         @media (max-width:1088px){  
             .py--conteiner{
                 background: #576574;
+                
             }
 
             .proyectos--items{
