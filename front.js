@@ -81,98 +81,136 @@ let eventClick = false;
   proyectos.forEach((pry , i)=>{
 
     pry.addEventListener("touchstart",(e)=>{
-        
-       eventTouch = true;
-        eventClick = false;
+        e.preventDefault();
 
-        if( mq_280.matches ){ 
-            if( i == 0 ){ return pry.classList.toggle("proyectos-active-280-1"); }
+        eventTouch = true;
+      
+        if( eventTouch ){
 
-            pry.classList.toggle("proyectos-active-280");
-            py_title[i].classList.toggle("py-active-title-280")
-            py_text[i].classList.toggle("py-active-text-280") 
-            py_link[i].classList.toggle( "py-active-link-280" ) 
-
-            console.log(e.target , "touch 280")
-         }
-        else if( mq_590.matches ){ 
-            pry.classList.toggle("proyectos-active-590");
-            py_title[i].classList.toggle("py-active-title-590")
-            py_text[i].classList.toggle("py-active-text-590") 
-            py_link[i].classList.toggle( "py-active-link-590" ) 
-            
-            console.log(e.target , "touch 590")
-        }
-        else if( mq_1088.matches ){ 
-            pry.classList.toggle("proyectos-active-1088");
-            py_title[i].classList.toggle("py-active-titulo")
-            py_text[i].classList.toggle("py-active-text") 
-            py_link[i].classList.toggle( "py-active-link" ) 
-            console.log(e.target , "touch 1088")
-        }
-        else if( !mq_1088.matches ){
-            if ( i == 0) {  
-                pry.classList.toggle("proyectos-active-0") 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
-            }
-            if ( i == 1) {  
-                pry.classList.toggle("proyectos-active-1") 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
-            }
-            if ( i == 2) {  
-                pry.classList.toggle("proyectos-active-2") 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
-            }
-            if ( i == 3) {  
-                pry.classList.toggle("proyectos-active-3") 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
-            }
-            // pry.classList.toggle("proyectos-active");
-            console.log(e.target , "touch ACTIVE")
+            if( mq_280.matches ){ 
+                if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
+                else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
+                else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
+                else { pry.classList.toggle("proyectos-active-280-3"); }
+                
+                py_title[i].classList.toggle("py-active-title-280")
+                py_text[i].classList.toggle("py-active-text-280") 
+                py_link[i].classList.toggle( "py-active-link-280" ) 
+         
+                console.log(e.target , "touch 280")
+             }
+            else if( mq_590.matches ){ 
+                if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
+                else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
+                else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
+                else { pry.classList.toggle("proyectos-active-590-3"); }
     
+                py_title[i].classList.toggle("py-active-title-590")
+                py_text[i].classList.toggle("py-active-text-590") 
+                py_link[i].classList.toggle( "py-active-link-590" ) 
+    
+                console.log(e.target , "touch 590")
+            }
+            else if( mq_1088.matches ){ 
+                if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
+                else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
+                else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
+                else { pry.classList.toggle("proyectos-active-1088-3"); }
+    
+                py_title[i].classList.toggle("py-active-titulo")
+                py_text[i].classList.toggle("py-active-text") 
+                py_link[i].classList.toggle( "py-active-link" ) 
+    
+                console.log(e.target , "touch 1088")
+            }
+            else if( !mq_1088.matches ){
+                if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
+                else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
+                else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
+                else{  pry.classList.toggle("proyectos-active-3") }
+    
+                py_title[i].classList.toggle("py-active-titulo")
+                py_text[i].classList.toggle("py-active-text") 
+                py_link[i].classList.toggle( "py-active-link" ) 
+                // pry.classList.toggle("proyectos-active");
+                console.log(e.target , "touch ACTIVE")
+        
+            }
+       
         }
+        eventTouch = false;
 
         
     })
 
 
-    // pry.addEventListener("click",(e)=>{
-        
-       
-    //     if( mq_280.matches ){ 
-    //         pry.classList.toggle("proyectos-active-280");
-    //         console.log(e.target , "CLICK 280")
-    //      }
-    //     else if( mq_590.matches ){ 
-    //         pry.classList.toggle("proyectos-active-590");
-    //         console.log(e.target , "CLICK 590")
-    //     }
-    //     else if( mq_1088.matches ){ 
-    //         pry.classList.toggle("proyectos-active-1088");
-    //         console.log(e.target , "CLICK 1088")
-    //     }
-    //     else if( !mq_1088.matches ){
-    //         i == 0 &&  pry.classList.toggle("proyectos-active-0");
-    //         i == 1 &&  pry.classList.toggle("proyectos-active-1");
-    //         i == 2 &&  pry.classList.toggle("proyectos-active-2");
-    //         i == 3 &&  pry.classList.toggle("proyectos-active-3");
-    //         // pry.classList.toggle("proyectos-active");
-    //         console.log(e.target , "CLICK ACTIVE")
-    
-    //     }
-    // })
-
-
   })
 
+   proyectos.forEach((pry , i)=>{
+
+     pry.addEventListener("click",(e)=>{
+        e.preventDefault();
+         eventClick = true;
+
+        if( eventClick ){
+
+            if( mq_280.matches ){ 
+                if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
+                else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
+                else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
+                else { pry.classList.toggle("proyectos-active-280-3"); }
+                
+                py_title[i].classList.toggle("py-active-title-280")
+                py_text[i].classList.toggle("py-active-text-280") 
+                py_link[i].classList.toggle( "py-active-link-280" ) 
+        
+                console.log(e.target , "CLICK 280")
+            }
+            else if( mq_590.matches ){ 
+                if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
+                else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
+                else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
+                else { pry.classList.toggle("proyectos-active-590-3"); }
+
+                py_title[i].classList.toggle("py-active-title-590")
+                py_text[i].classList.toggle("py-active-text-590") 
+                py_link[i].classList.toggle( "py-active-link-590" ) 
+
+                console.log(e.target , "CLICK 590")
+            }
+            else if( mq_1088.matches ){ 
+                if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
+                else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
+                else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
+                else { pry.classList.toggle("proyectos-active-1088-3"); }
+
+                py_title[i].classList.toggle("py-active-titulo")
+                py_text[i].classList.toggle("py-active-text") 
+                py_link[i].classList.toggle( "py-active-link" ) 
+
+                console.log(e.target , "CLICK 1088")
+            }
+            else if( !mq_1088.matches ){
+                if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
+                else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
+                else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
+                else{  pry.classList.toggle("proyectos-active-3") }
+
+                py_title[i].classList.toggle("py-active-titulo")
+                py_text[i].classList.toggle("py-active-text") 
+                py_link[i].classList.toggle( "py-active-link" ) 
+
+                console.log(e.target , "CLICK ACTIVE")
+        
+            }
+
+        }
+       
+        eventClick = false;
+
+     })
+
+   })
 
   
   //* Este evento esta bien
