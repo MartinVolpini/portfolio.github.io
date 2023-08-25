@@ -72,9 +72,10 @@ header.style.position = "relative" ;
 
   let proyectos = document.querySelectorAll(".proyectos--items")  
 
-  proyectos.forEach((pry)=>{
+  proyectos.forEach((pry , i)=>{
     pry.addEventListener("touchstart",(e)=>{
         
+       
         if( mq_280.matches ){ 
             pry.classList.toggle("proyectos-active-280");
             console.log(e.target , "touch 280")
@@ -86,6 +87,15 @@ header.style.position = "relative" ;
         else if( mq_1088.matches ){ 
             pry.classList.toggle("proyectos-active-1088");
             console.log(e.target , "touch 1088")
+        }
+        else if( !mq_1088.matches ){
+            i == 0 &&  pry.classList.toggle("proyectos-active-0");
+            i == 1 &&  pry.classList.toggle("proyectos-active-1");
+            i == 2 &&  pry.classList.toggle("proyectos-active-2");
+            i == 3 &&  pry.classList.toggle("proyectos-active-3");
+            // pry.classList.toggle("proyectos-active");
+            console.log(e.target , "touch ACTIVE")
+    
         }
     })
     // pry.addEventListener("click",(e)=>{

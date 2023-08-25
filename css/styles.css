@@ -522,7 +522,7 @@ header::before{
             background-position: center; background-size: cover;
         }
     
-        .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
+        /* .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
             
             background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
@@ -549,7 +549,7 @@ header::before{
             background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
             url("../img/calculadora-01.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-        }
+        } */
 
         .proyectos--sub{
             display: flex; flex-direction: column; justify-content: space-between;
@@ -607,9 +607,41 @@ header::before{
             padding: 3rem 2rem 1rem 2rem;  margin: 0px auto;
         }
         
-        /* .proyectos-active{
+        .proyectos-active{
+                background: linear-gradient(rgba(192, 130, 97, 0.75),rgba(175, 175, 30, 0.75))!important;
+        }
+        .proyectos-active-0{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/cami-2.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
 
-        } */
+        .proyectos-active-1{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/bbdd-02.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
+
+        .proyectos-active-2{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+            url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+
+        }
+
+        .proyectos-active-3{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+      
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/calculadora-01.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
 
         @media (max-width:1088px){  
             .py--conteiner{
@@ -617,36 +649,38 @@ header::before{
 
             }
             .proyectos-active-1088 {
-                /* transform: scale( 0.8 )!important; */
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
+                transform: scale( 0.96 )!important;
+                margin: 3rem 2rem;
+                /* height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; */
                 background: linear-gradient(rgba(97, 124, 192, 0.75),rgba(175, 175, 30, 0.75))!important;
             }
 
             .proyectos--items{
                 margin: 1rem 0rem;
             }
-            .proyectos--items:nth-child(1):focus {
+
+            /* .proyectos--items:nth-child(1):focus {
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
-                /* transform: scale( 0.8 )!important; */
+    
            
             }
             .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; 
            
             }
-            .REVICION:hover ,.REVICION:focus , .REVICION:active{
+            .proyectos--items:nth-child(3):hover,.proyectos--items:nth-child(3):focus , .proyectos--items:nth-child(3):active{
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; opacity: 0.7;
           
             }
             .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
                 height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
-            }
+            } */
        
         }
         @media (max-width:590px){
 
             .proyectos-active-590{
-                transform: scale( 0.8 )!important; 
+                transform: scale( 0.95 )!important; 
                 background: linear-gradient(rgba(192, 97, 186, 0.75),rgba(175, 175, 30, 0.75))!important;
             }
 
@@ -719,7 +753,7 @@ header::before{
         @media (max-width:280px){
 
             .proyectos-active-280{
-                transform: scale( 0.8 )!important; 
+                transform: scale( 0.9 )!important; 
                 background: linear-gradient(rgba(114, 193, 80, 0.75),rgba(175, 175, 30, 0.75))!important;
             }
 
@@ -730,29 +764,29 @@ header::before{
                 max-height: 14rem; max-width: 96%; 
                 margin: 1rem 0rem;
             }
-         
+/*          
             .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
-                /* height: 16rem; width: 20rem;   */
+             
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
               
                 padding: 1rem; 
                 
-            }
-            .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
+            } */
+            .proyectos--items:nth-child(2):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
                 
             }
-            .proyectos--items:nth-child(3):hover,.proyectos--items:nth-child(3):focus {
+            .proyectos--items:nth-child(3):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
             }
-            .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
+            /* .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
                 
-            }
+            } */
 
             .py--items--titulo {
                 padding: 0rem 1rem 0.2rem 0.5rem;
