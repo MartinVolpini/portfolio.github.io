@@ -751,17 +751,17 @@ header::before{
                 transition: all 0.5s;
                 
             }
-            .proyectos--items:hover .py--items--titulo{
+            .py-active-title-590{
                 box-sizing: border-box;
                 padding: 2.5rem 1rem 0.5rem 0.5rem;
                 font-size: 1.6rem;
             }
-            .proyectos--items:hover .py--items--text{
+            .py-active-text-590{
                 box-sizing: border-box;
                 padding: 0rem 1rem 5rem 0.5rem;
                 font-size: 0.9rem;
             }
-            .proyectos--items:hover .py--items--link{ 
+            .py-active-link-590{ 
                 box-sizing: border-box;
                 display: block;
                 visibility: inherit; 
@@ -769,16 +769,47 @@ header::before{
                 display: block;
                 max-width: 100%; 
                 padding: 1rem 0.5rem 1rem 0.3rem;  margin: 0px ; 
-                /* border: #10ac84 solid 1px; */
+                
                 font-size: 0.8rem;
             }
+            /* .proyectos--items:hover .py--items--titulo{
+                box-sizing: border-box;
+                padding: 2.5rem 1rem 0.5rem 0.5rem;
+                font-size: 1.6rem;
+            } */
+            /* .proyectos--items:hover .py--items--text{
+                box-sizing: border-box;
+                padding: 0rem 1rem 5rem 0.5rem;
+                font-size: 0.9rem;
+            } */
+            /* .proyectos--items:hover .py--items--link{ 
+                box-sizing: border-box;
+                display: block;
+                visibility: inherit; 
+                opacity: 1!important;
+                display: block;
+                max-width: 100%; 
+                padding: 1rem 0.5rem 1rem 0.3rem;  margin: 0px ; 
+                
+                font-size: 0.8rem;
+            } */
         }
         @media (max-width:280px){
 
             .proyectos-active-280{
                 transform: scale( 0.9 )!important; 
                 background: linear-gradient(rgba(114, 193, 80, 0.75),rgba(175, 175, 30, 0.75))!important;
+
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
             }
+            .proyectos-active-280-1{
+
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                padding: 1rem; 
+            }
+
 
             .proyectos{ 
                 padding: 7rem 0.7rem 7.5rem 0.7rem; 
@@ -796,15 +827,15 @@ header::before{
                 padding: 1rem; 
                 
             } */
-            .proyectos--items:nth-child(2):focus {
+            /* .proyectos--items:nth-child(2):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
                 
-            }
-            .proyectos--items:nth-child(3):focus {
+            } */
+            /* .proyectos--items:nth-child(3):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
-            }
+            } */
             /* .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
@@ -831,18 +862,18 @@ header::before{
                 transition: all 0.5s;
                 
             }
-            .proyectos--items:hover .py--items--titulo{
+            .py-active-title-280{
                 box-sizing: border-box;
                 padding: 2rem 1rem 0.5rem 0.3rem;
                 font-size: 1.6rem;
             }
-            .proyectos--items:hover .py--items--text{
+            .py-active-text-280{
                 box-sizing: border-box;
                 height: auto;
                 padding: 0rem 1rem 3rem 0.3rem;
                 font-size: 0.9rem;
             }
-            .proyectos--items:hover .py--items--link{ 
+            .py-active-link-280{ 
                 box-sizing: border-box!important;
                 display: flex; flex-flow: row wrap;
                 visibility: inherit; 
@@ -850,9 +881,31 @@ header::before{
                 display: block;
                 max-width: 100%; height: auto;
                 padding: 1rem 0.5rem 1rem 0rem;  margin: 0px ; 
-                /* border: #10ac84 solid 1px; */
+             
                 font-size: 0.8rem;
             }
+            /* .proyectos--items:hover .py--items--titulo{
+                box-sizing: border-box;
+                padding: 2rem 1rem 0.5rem 0.3rem;
+                font-size: 1.6rem;
+            } */
+            /* .proyectos--items:hover .py--items--text{
+                box-sizing: border-box;
+                height: auto;
+                padding: 0rem 1rem 3rem 0.3rem;
+                font-size: 0.9rem;
+            } */
+            /* .proyectos--items:hover .py--items--link{ 
+                box-sizing: border-box!important;
+                display: flex; flex-flow: row wrap;
+                visibility: inherit; 
+                opacity: 1!important;
+                display: block;
+                max-width: 100%; height: auto;
+                padding: 1rem 0.5rem 1rem 0rem;  margin: 0px ; 
+             
+                font-size: 0.8rem;
+            } */
         }
 /*            ---------------------------SKILLS----------------------------------                 */
 
