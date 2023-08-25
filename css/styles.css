@@ -497,7 +497,11 @@ header::before{
         color: var(--gray);
     }
     .py--conteiner{
-        display: flex; flex-flow: row wrap; justify-content: center; 
+        display: flex; flex-flow: row wrap; 
+        justify-content: center;  
+        /* margin: 0% auto; */
+        
+                            background-color: #222f3e;
     }
         .proyectos--items{
             display: flex; justify-content: start; align-items: flex-end;
@@ -508,48 +512,52 @@ header::before{
         .proyectos--items:nth-child(1){
             background-image: url("../img/cami-2.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
+            cursor: pointer;
         }
         .proyectos--items:nth-child(2){
             background-image: url("../img/bbdd-02.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
+            cursor: pointer;
         }
         .proyectos--items:nth-child(3){
             background-image: url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
+            cursor: pointer;
         }
         .proyectos--items:nth-child(4){
             background-image: url("../img/calculadora-01.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
+            cursor: pointer;
         }
     
-        /* .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
+        .proyectos--items:nth-child(1):focus {
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
             
             background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
             url("../img/cami-2.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
         }
-        .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
+        .proyectos--items:nth-child(2):focus {
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
             
             background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
             url("../img/bbdd-02.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
         }
-        .proyectos--items:nth-child(3):hover,.proyectos--items:nth-child(3):focus {
+        .proyectos--items:nth-child(3):focus {
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
             
             background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
             url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
         }
-        .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
+        .proyectos--items:nth-child(4):focus {
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
       
             background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
             url("../img/calculadora-01.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-        } */
+        }
 
         .proyectos--sub{
             display: flex; flex-direction: column; justify-content: space-between;
@@ -588,28 +596,43 @@ header::before{
             transition: all 0.5s;
         }
 
-        .proyectos--items:hover .py--items--titulo{
+        /* .proyectos--items:hover   .py--items--titulo{
+            visibility: inherit; 
+            opacity: 1; 
+            padding: 3rem 1rem 0rem 2rem;
+
+        } */
+        /* .proyectos--items:hover .py--items--text{
+            visibility: inherit;  
+            opacity: 1; 
+            padding: 0rem 2rem 1rem 2rem;
+        } */
+        /* .proyectos--items:hover .py--items--link{ 
+            
+            display: block;
+            visibility: inherit; 
+            opacity: 1!important; 
+            padding: 3rem 2rem 1rem 2rem;  margin: 0px auto;
+        } */ /* position: relative; bottom: 2%; right: auto; */
+        
+        .py-active-titulo{
             visibility: inherit; 
             opacity: 1; 
             padding: 3rem 1rem 0rem 2rem;
 
         }
-        .proyectos--items:hover .py--items--text{
+        .py-active-text{
             visibility: inherit;  
             opacity: 1; 
             padding: 0rem 2rem 1rem 2rem;
         }
-        .proyectos--items:hover .py--items--link{ 
-            /* position: relative; bottom: 2%; right: auto; */
+        .py-active-link{
             display: block;
             visibility: inherit; 
             opacity: 1!important; 
             padding: 3rem 2rem 1rem 2rem;  margin: 0px auto;
         }
-        
-        .proyectos-active{
-                background: linear-gradient(rgba(192, 130, 97, 0.75),rgba(175, 175, 30, 0.75))!important;
-        }
+    
         .proyectos-active-0{
             height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
             
