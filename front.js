@@ -62,31 +62,69 @@ header.style.position = "relative" ;
  /*-----------------Proyectos--------------------------------------- */
 
   let customButton = document.getElementById("custom-button");  
-   
-//   customButton.classList.add("custom-button-active"); 
-  
-  
-  customButton.addEventListener("touchstart", function() {
-    customButton.classList.add("custom-button-active");
-    // alert("evento touchstart")
-  });
 
-  customButton.addEventListener("touchend", function() {
-    // alert("evento touchend")
-    customButton.classList.remove("custom-button-active");
+  let mq_1088 = matchMedia( "(max-width:1088px)" );
+  let mq_590 = matchMedia( "(max-width:590px)" );
+  let mq_280 = matchMedia( "(max-width:280px)" );
+
+//   alert( mq_1088.matches )
+//   console.log( mq_1088 )
+
+  let proyectos = document.querySelectorAll(".proyectos--items")  
+
+  proyectos.forEach((pry)=>{
+    pry.addEventListener("touchstart",(e)=>{
+        
+        if( mq_280.matches ){ 
+            pry.classList.toggle("proyectos-active-280");
+            console.log(e.target , "touch 280")
+         }
+        else if( mq_590.matches ){ 
+            pry.classList.toggle("proyectos-active-590");
+            console.log(e.target , "touch 590")
+        }
+        else if( mq_1088.matches ){ 
+            pry.classList.toggle("proyectos-active-1088");
+            console.log(e.target , "touch 1088")
+        }
+    })
+    // pry.addEventListener("click",(e)=>{
+    //     mq_1088 && pry.classList.toggle("custom-button-active-1088");
+    //     console.log(e.target , "click")
+    // })
+  })
+
+
+  
+  //* Este evento esta bien
+//   customButton.addEventListener("touchstart", function() {
+//     if (!controTouch){
+//         customButton.classList.add("custom-button-active");
+//         controTouch = true;
+//     } else {
+//         customButton.classList.remove("custom-button-active");
+//         controTouch = false
+//     }
+   
+//     // alert("evento touchstart")
+//   });
+
+//   customButton.addEventListener("touchend", function() {
+//     // alert("evento touchend")
+//     customButton.classList.remove("custom-button-active");
     
-  });
+//   });
 
 //   customButton.addEventListener("touchenter", function() {
 //     customButton.classList.add("custom-button-active");
 //     alert("evento touchenter")
 //   });
 
-//   customButton.addEventListener("touchout", function() {
-//     alert("evento touchout")
-//     customButton.classList.remove("custom-button-active");
+  customButton.addEventListener("touchout", function() {
+    alert("evento touchout")
+    customButton.classList.remove("custom-button-active");
     
-//   });
+  });
 
 
 
