@@ -100,6 +100,7 @@ let eventClick = false;
             py_title[i].classList.toggle("py-active-title-590")
             py_text[i].classList.toggle("py-active-text-590") 
             py_link[i].classList.toggle( "py-active-link-590" ) 
+            
             console.log(e.target , "touch 590")
         }
         else if( mq_1088.matches ){ 

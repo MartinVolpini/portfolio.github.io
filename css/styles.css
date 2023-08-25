@@ -752,11 +752,17 @@ header::before{
                 
             }
             .py-active-title-590{
+                visibility: inherit; 
+                opacity: 1; 
+
                 box-sizing: border-box;
                 padding: 2.5rem 1rem 0.5rem 0.5rem;
                 font-size: 1.6rem;
             }
             .py-active-text-590{
+                visibility: inherit;  
+                opacity: 1; 
+
                 box-sizing: border-box;
                 padding: 0rem 1rem 5rem 0.5rem;
                 font-size: 0.9rem;
@@ -797,8 +803,8 @@ header::before{
         @media (max-width:280px){
 
             .proyectos-active-280{
-                transform: scale( 0.9 )!important; 
-                background: linear-gradient(rgba(114, 193, 80, 0.75),rgba(175, 175, 30, 0.75))!important;
+                /* transform: scale( 0.9 )!important; 
+                background: linear-gradient(rgba(114, 193, 80, 0.75),rgba(175, 175, 30, 0.75))!important; */
 
                 margin: 2rem auto;
                 max-height: 16rem; max-width: 96%; 
@@ -863,17 +869,24 @@ header::before{
                 
             }
             .py-active-title-280{
+                visibility: inherit; 
+                opacity: 1; 
+
                 box-sizing: border-box;
                 padding: 2rem 1rem 0.5rem 0.3rem;
                 font-size: 1.6rem;
             }
             .py-active-text-280{
+                visibility: inherit;  
+                opacity: 1; 
+
                 box-sizing: border-box;
                 height: auto;
                 padding: 0rem 1rem 3rem 0.3rem;
                 font-size: 0.9rem;
             }
             .py-active-link-280{ 
+         
                 box-sizing: border-box!important;
                 display: flex; flex-flow: row wrap;
                 visibility: inherit; 
