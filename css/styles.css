@@ -259,7 +259,9 @@ header::before{
         font-size: 3rem; 
     }   
 }
+
 /*----     ------   NAV      ------*/
+
 .nav-toggle{
     box-sizing: border-box; z-index: 99;
     display: block;  transition: all 0.3s;
@@ -477,7 +479,9 @@ header::before{
         filter: grayscale(0.8);
      }
 }
+
 /*                --------------------------PROYECTOS--------------------------------               */
+
 .proyectos{ 
     box-sizing: border-box;
     min-height: 1100px; 
@@ -983,10 +987,9 @@ header::before{
                 font-size: 0.8rem;
             } */
         }
+
 /*            ---------------------------SKILLS----------------------------------                 */
 
-/*AUMENTO: CREAR SIERTA SOMBRA ABAJA DE CADA ITEM COMO SI FUERA UN PISO*/
-/*AUMENTO: MODIFICAR EL SUBRRAYADO DEL TITULO PARA Q SEA MAS LARGO Q SE VALLA ACHICANDO EN LAS PUNTAS Y QUE TENGA SIERTO GRADIENTE*/
 
 .skills-conteiner-country{
     /*background:  var(--red);  
