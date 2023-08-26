@@ -310,7 +310,9 @@ proyectos.forEach((pry , i)=>{
 
 })
 
+//*Aumentos : estaria bueno limpiar las class para que no se produscan errores con varios eventos q hacen lo mismo en la vista. 
 
+/*--------------------------------------------------------------------------------- */
 
 
  let tag_a = document.querySelectorAll(".py--items--link")
