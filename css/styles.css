@@ -368,7 +368,8 @@ header::before{
 }
 
 /*           ----------------------------Me describo---------------------------------   */
-/*EN PANTALLAS GRANDES LA LETRA SE VE CHICA */
+
+
 .main-conteiner-country{
     background: var(--color2); color: #eee;
 } 
@@ -493,7 +494,8 @@ header::before{
         text-align: center;
         padding-top: 3rem!;
         font-size: 1.2rem;
-        color: var(--light-orange); font-weight: bold;
+        font-weight: bold;
+        color: var(--light-orange); 
     }
     .py--titulo{
         display: block; text-align: center; 
@@ -509,28 +511,29 @@ header::before{
         .proyectos--items{
             display: flex; justify-content: start; align-items: flex-end;
             height: 20rem; width: 30rem; padding: 2rem; margin: 0rem;
-            background-color: var(--light-orange)/*rgb(248, 233, 24)*/; transition: all 0.5s;
+           /*rgb(248, 233, 24)*/; transition: all 0.5s;
+           cursor: pointer;
            
         }
         .proyectos--items:nth-child(1){
             background-image: url("../img/cami-2.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-            cursor: pointer;
+            
         }
         .proyectos--items:nth-child(2){
             background-image: url("../img/bbdd-02.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-            cursor: pointer;
+     
         }
         .proyectos--items:nth-child(3){
             background-image: url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-            cursor: pointer;
+         
         }
         .proyectos--items:nth-child(4){
             background-image: url("../img/calculadora-01.png"); background-repeat: no-repeat; 
             background-position: center; background-size: cover;
-            cursor: pointer;
+     
         }
     
         .proyectos--items:nth-child(1):focus {
@@ -599,24 +602,6 @@ header::before{
             transition: all 0.5s;
         }
 
-        /* .proyectos--items:hover   .py--items--titulo{
-            visibility: inherit; 
-            opacity: 1; 
-            padding: 3rem 1rem 0rem 2rem;
-
-        } */
-        /* .proyectos--items:hover .py--items--text{
-            visibility: inherit;  
-            opacity: 1; 
-            padding: 0rem 2rem 1rem 2rem;
-        } */
-        /* .proyectos--items:hover .py--items--link{ 
-            
-            display: block;
-            visibility: inherit; 
-            opacity: 1!important; 
-            padding: 3rem 2rem 1rem 2rem;  margin: 0px auto;
-        } */ /* position: relative; bottom: 2%; right: auto; */
         
         .py-active-titulo{
             visibility: inherit; 
@@ -670,7 +655,11 @@ header::before{
         }
 
         @media (max-width:1088px){  
-       
+            
+            .proyectos--items{
+                margin: 1rem 0rem;
+            }
+
             .proyectos-active-1088-0 {
                 transform: scale( 0.96 )!important;
                 margin: 3rem 2rem;
@@ -708,21 +697,20 @@ header::before{
                 background-position: center!important; background-size: cover!important;
             }
 
-            .proyectos--items{
-                margin: 1rem 0rem;
-            }
+           
 
        
         }
         @media (max-width:590px){
 
             .proyectos-active-590-0{
-                transform: scale( 0.95 )!important; 
+                transform: scale( 0.96 )!important; 
          
                 background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
                 url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
                 background-position: center!important; background-size: cover!important;
             }
+
             .proyectos-active-590-1 {
                 transform: scale( 0.96 )!important;
                 
@@ -821,27 +809,7 @@ header::before{
                 
                 font-size: 0.8rem;
             }
-            /* .proyectos--items:hover .py--items--titulo{
-                box-sizing: border-box;
-                padding: 2.5rem 1rem 0.5rem 0.5rem;
-                font-size: 1.6rem;
-            } */
-            /* .proyectos--items:hover .py--items--text{
-                box-sizing: border-box;
-                padding: 0rem 1rem 5rem 0.5rem;
-                font-size: 0.9rem;
-            } */
-            /* .proyectos--items:hover .py--items--link{ 
-                box-sizing: border-box;
-                display: block;
-                visibility: inherit; 
-                opacity: 1!important;
-                display: block;
-                max-width: 100%; 
-                padding: 1rem 0.5rem 1rem 0.3rem;  margin: 0px ; 
-                
-                font-size: 0.8rem;
-            } */
+            
         }
         @media (max-width:280px){
 
