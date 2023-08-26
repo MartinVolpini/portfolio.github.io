@@ -61,7 +61,6 @@ header.style.position = "relative" ;
 
  /*-----------------Proyectos--------------------------------------- */
 
-let customButton = document.getElementById("custom-button");  
 
 let mq_1088 = matchMedia( "(max-width:1088px)" );
 let mq_590 = matchMedia( "(max-width:590px)" );
@@ -311,38 +310,6 @@ proyectos.forEach((pry , i)=>{
 
 })
 
-
-
-  
-  //* Este evento esta bien
-//   customButton.addEventListener("touchstart", function() {
-//     if (!controTouch){
-//         customButton.classList.add("custom-button-active");
-//         controTouch = true;
-//     } else {
-//         customButton.classList.remove("custom-button-active");
-//         controTouch = false
-//     }
-   
-//     // alert("evento touchstart")
-//   });
-
-//   customButton.addEventListener("touchend", function() {
-//     // alert("evento touchend")
-//     customButton.classList.remove("custom-button-active");
-    
-//   });
-
-//   customButton.addEventListener("touchenter", function() {
-//     customButton.classList.add("custom-button-active");
-//     alert("evento touchenter")
-//   });
-
-  customButton.addEventListener("touchout", function() {
-    alert("evento touchout")
-    customButton.classList.remove("custom-button-active");
-    
-  });
 
 
 

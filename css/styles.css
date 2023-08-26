@@ -501,7 +501,6 @@ header::before{
         justify-content: center;  
         /* margin: 0% auto; */
         
-                            background-color: #222f3e;
     }
         .proyectos--items{
             display: flex; justify-content: start; align-items: flex-end;
@@ -667,15 +666,11 @@ header::before{
         }
 
         @media (max-width:1088px){  
-            .py--conteiner{
-                background: #576574;
-
-            }
+       
             .proyectos-active-1088-0 {
                 transform: scale( 0.96 )!important;
                 margin: 3rem 2rem;
                 /* height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; */
-                background: linear-gradient(rgba(97, 124, 192, 0.75),rgba(175, 175, 30, 0.75))!important;
 
                 background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
                 url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
@@ -713,22 +708,6 @@ header::before{
                 margin: 1rem 0rem;
             }
 
-            /* .proyectos--items:nth-child(1):focus {
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
-    
-           
-            }
-            .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; 
-           
-            }
-            .proyectos--items:nth-child(3):hover,.proyectos--items:nth-child(3):focus , .proyectos--items:nth-child(3):active{
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; 
-          
-            }
-            .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
-                height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem;
-            } */
        
         }
         @media (max-width:590px){
