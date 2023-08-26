@@ -61,28 +61,26 @@ header.style.position = "relative" ;
 
  /*-----------------Proyectos--------------------------------------- */
 
-  let customButton = document.getElementById("custom-button");  
+let customButton = document.getElementById("custom-button");  
 
-  let mq_1088 = matchMedia( "(max-width:1088px)" );
-  let mq_590 = matchMedia( "(max-width:590px)" );
-  let mq_280 = matchMedia( "(max-width:280px)" );
+let mq_1088 = matchMedia( "(max-width:1088px)" );
+let mq_590 = matchMedia( "(max-width:590px)" );
+let mq_280 = matchMedia( "(max-width:280px)" );
 
-//   alert( mq_1088.matches )
-//   console.log( mq_1088 )
-
-    let proyectos = document.querySelectorAll(".proyectos--items") ;
-    let py_title = document.querySelectorAll( ".py--items--titulo") ;
-    let py_text = document.querySelectorAll( ".py--items--text" ) ;
-    let py_link = document.querySelectorAll( ".py--items--link" ) ;
+let proyectos = document.querySelectorAll(".proyectos--items") ;
+let py_title = document.querySelectorAll( ".py--items--titulo") ;
+let py_text = document.querySelectorAll( ".py--items--text" ) ;
+let py_link = document.querySelectorAll( ".py--items--link" ) ;
 
 let eventTouch = false;
 let eventClick = false;
 
-  proyectos.forEach((pry , i)=>{
+
+proyectos.forEach((pry , i)=>{
 
     pry.addEventListener("touchstart",(e)=>{
         e.preventDefault();
-
+  
         eventTouch = true;
       
         if( eventTouch ){
@@ -144,73 +142,176 @@ let eventClick = false;
     })
 
 
-  })
+})
 
-   proyectos.forEach((pry , i)=>{
+proyectos.forEach((pry , i)=>{
 
-     pry.addEventListener("click",(e)=>{
-        e.preventDefault();
-         eventClick = true;
+    pry.addEventListener("mouseenter", (e) => {
+        // Cambiar estilos u realizar acciones cuando el cursor entra en el elemento
+       e.preventDefault();
 
-        if( eventClick ){
+           if( mq_280.matches ){ 
+               if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
+               else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
+               else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
+               else { pry.classList.toggle("proyectos-active-280-3"); }
+               
+               py_title[i].classList.toggle("py-active-title-280")
+               py_text[i].classList.toggle("py-active-text-280") 
+               py_link[i].classList.toggle( "py-active-link-280" ) 
+       
+               console.log(e.target , "CLICK 280")
+           }
+           else if( mq_590.matches ){ 
+               if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
+               else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
+               else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
+               else { pry.classList.toggle("proyectos-active-590-3"); }
 
-            if( mq_280.matches ){ 
-                if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
-                else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
-                else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
-                else { pry.classList.toggle("proyectos-active-280-3"); }
-                
-                py_title[i].classList.toggle("py-active-title-280")
-                py_text[i].classList.toggle("py-active-text-280") 
-                py_link[i].classList.toggle( "py-active-link-280" ) 
-        
-                console.log(e.target , "CLICK 280")
-            }
-            else if( mq_590.matches ){ 
-                if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
-                else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
-                else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
-                else { pry.classList.toggle("proyectos-active-590-3"); }
+               py_title[i].classList.toggle("py-active-title-590")
+               py_text[i].classList.toggle("py-active-text-590") 
+               py_link[i].classList.toggle( "py-active-link-590" ) 
 
-                py_title[i].classList.toggle("py-active-title-590")
-                py_text[i].classList.toggle("py-active-text-590") 
-                py_link[i].classList.toggle( "py-active-link-590" ) 
+               console.log(e.target , "CLICK 590")
+           }
+           else if( mq_1088.matches ){ 
+               if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
+               else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
+               else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
+               else { pry.classList.toggle("proyectos-active-1088-3"); }
 
-                console.log(e.target , "CLICK 590")
-            }
-            else if( mq_1088.matches ){ 
-                if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
-                else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
-                else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
-                else { pry.classList.toggle("proyectos-active-1088-3"); }
+               py_title[i].classList.toggle("py-active-titulo")
+               py_text[i].classList.toggle("py-active-text") 
+               py_link[i].classList.toggle( "py-active-link" ) 
 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
+               console.log(e.target , "CLICK 1088")
+           }
+           else if( !mq_1088.matches ){
+               if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
+               else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
+               else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
+               else{  pry.classList.toggle("proyectos-active-3") }
 
-                console.log(e.target , "CLICK 1088")
-            }
-            else if( !mq_1088.matches ){
-                if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
-                else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
-                else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
-                else{  pry.classList.toggle("proyectos-active-3") }
+               py_title[i].classList.toggle("py-active-titulo")
+               py_text[i].classList.toggle("py-active-text") 
+               py_link[i].classList.toggle( "py-active-link" ) 
 
-                py_title[i].classList.toggle("py-active-titulo")
-                py_text[i].classList.toggle("py-active-text") 
-                py_link[i].classList.toggle( "py-active-link" ) 
+               console.log(e.target , "CLICK ACTIVE")
+       
+           }
+ 
+   })
 
-                console.log(e.target , "CLICK ACTIVE")
-        
-            }
+   pry.addEventListener("mouseleave", (e) => {
+    e.preventDefault();
+    // Cambiar estilos u realizar acciones cuando el cursor sale del elemento
+        if( mq_280.matches ){ 
+            if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
+            else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
+            else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
+            else { pry.classList.toggle("proyectos-active-280-3"); }
+            
+            py_title[i].classList.toggle("py-active-title-280")
+            py_text[i].classList.toggle("py-active-text-280") 
+            py_link[i].classList.toggle( "py-active-link-280" ) 
+
 
         }
-       
-        eventClick = false;
+        else if( mq_590.matches ){ 
+            if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
+            else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
+            else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
+            else { pry.classList.toggle("proyectos-active-590-3"); }
 
-     })
+            py_title[i].classList.toggle("py-active-title-590")
+            py_text[i].classList.toggle("py-active-text-590") 
+            py_link[i].classList.toggle( "py-active-link-590" ) 
 
-   })
+        }
+        else if( mq_1088.matches ){ 
+            if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
+            else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
+            else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
+            else { pry.classList.toggle("proyectos-active-1088-3"); }
+
+            py_title[i].classList.toggle("py-active-titulo")
+            py_text[i].classList.toggle("py-active-text") 
+            py_link[i].classList.toggle( "py-active-link" ) 
+
+        }
+        else if( !mq_1088.matches ){
+            if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
+            else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
+            else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
+            else{  pry.classList.toggle("proyectos-active-3") }
+
+            py_title[i].classList.toggle("py-active-titulo")
+            py_text[i].classList.toggle("py-active-text") 
+            py_link[i].classList.toggle( "py-active-link" ) 
+
+        }
+
+  });
+
+
+    //  pry.addEventListener("click",(e)=>{
+    //     e.preventDefault();
+
+    //         if( mq_280.matches ){ 
+    //             if( i == 0 ){ pry.classList.toggle("proyectos-active-280-0"); } 
+    //             else if( i == 1 ){ pry.classList.toggle("proyectos-active-280-1"); }
+    //             else if( i == 2 ){ pry.classList.toggle("proyectos-active-280-2"); }
+    //             else { pry.classList.toggle("proyectos-active-280-3"); }
+                
+    //             py_title[i].classList.toggle("py-active-title-280")
+    //             py_text[i].classList.toggle("py-active-text-280") 
+    //             py_link[i].classList.toggle( "py-active-link-280" ) 
+        
+    //             console.log(e.target , "CLICK 280")
+    //         }
+    //         else if( mq_590.matches ){ 
+    //             if( i == 0){   pry.classList.toggle("proyectos-active-590-0"); }
+    //             else if( i == 1){   pry.classList.toggle("proyectos-active-590-1"); }
+    //             else if( i == 2){   pry.classList.toggle("proyectos-active-590-2"); }
+    //             else { pry.classList.toggle("proyectos-active-590-3"); }
+
+    //             py_title[i].classList.toggle("py-active-title-590")
+    //             py_text[i].classList.toggle("py-active-text-590") 
+    //             py_link[i].classList.toggle( "py-active-link-590" ) 
+
+    //             console.log(e.target , "CLICK 590")
+    //         }
+    //         else if( mq_1088.matches ){ 
+    //             if( i == 0 ){ pry.classList.toggle("proyectos-active-1088-0"); }
+    //             else if( i == 1 ){ pry.classList.toggle("proyectos-active-1088-1"); }
+    //             else if( i == 2 ){ pry.classList.toggle("proyectos-active-1088-2"); }
+    //             else { pry.classList.toggle("proyectos-active-1088-3"); }
+
+    //             py_title[i].classList.toggle("py-active-titulo")
+    //             py_text[i].classList.toggle("py-active-text") 
+    //             py_link[i].classList.toggle( "py-active-link" ) 
+
+    //             console.log(e.target , "CLICK 1088")
+    //         }
+    //         else if( !mq_1088.matches ){
+    //             if ( i == 0) {  pry.classList.toggle("proyectos-active-0") }
+    //             else if ( i == 1) {  pry.classList.toggle("proyectos-active-1") }
+    //             else if ( i == 2) {  pry.classList.toggle("proyectos-active-2") }
+    //             else{  pry.classList.toggle("proyectos-active-3") }
+
+    //             py_title[i].classList.toggle("py-active-titulo")
+    //             py_text[i].classList.toggle("py-active-text") 
+    //             py_link[i].classList.toggle( "py-active-link" ) 
+
+    //             console.log(e.target , "CLICK ACTIVE")
+        
+    //         }
+
+    // })
+
+})
+
+
 
   
   //* Este evento esta bien
