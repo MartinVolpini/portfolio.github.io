@@ -1,0 +1,21 @@
+/*------------      ------------------ FOOTER          -----------------       -----------------*/
+footer{
+    display: flex; flex-flow: row; justify-content: center; align-content: center; align-items: center;
+   min-height: 30vh; width: 100%;
+   background-color: var(--black); 
+}
+/* .social-link{ */
+    /* width: 5rem; height: 5rem; margin: 2rem;  */
+    /* background-image: url("./img/github-33.png"); background-repeat: no-repeat; background-position: center; */
+    /* filter: invert(100%);; */
+/* } */
+.icon-social{
+    width: 4rem; height: 4rem; margin: 2rem 1rem 2.5rem 1rem; 
+    filter: invert(100%);;
+
+}
+.text-muted{
+    margin: 0% 0px 10px 6px; padding: 0%;
+    font-size: 13.5px;
+    color: #eee;
+}

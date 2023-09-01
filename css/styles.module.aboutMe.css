@@ -1,0 +1,113 @@
+/*           ----------------------------Me describo---------------------------------   */
+
+
+.main-conteiner-country{
+    background: var(--color2); color: #eee;
+} 
+.main{
+    min-height: 90vh; max-width: 1440px; margin: auto;
+}  
+.main-titulo{
+    display: block; text-align: center;
+    padding: 3rem; 
+    /* border-bottom: var(--light-gray) solid 1.5px; */
+    /* font-size: 1.9rem; */
+
+ }
+ .main-subrayado{
+    height: 3.2px;
+    max-width: 75%; margin: auto;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) , #eee ,#eee, rgba(255,0,0,0));
+}
+ .box-content{
+    display: flex; flex-flow: row wrap; justify-content: center;
+    height: 100%; width: 100%;
+    padding: 50px 0px;
+ }
+ .box--1{           
+    display: inline-block; 
+    max-height: 100%; 
+    min-width: 40%;
+ }  
+ .box--1--img{
+    display: block;
+    width: 16rem;  
+    border-radius: 50%; 
+    margin: 5%  40px auto auto; 
+    filter: grayscale(0.8);
+ }
+
+ .box--2{     
+    display: block; box-sizing: border-box;
+    justify-self: end; align-self:end;      
+    max-height: 100%;
+    width: 55%;
+    padding: 1rem;
+ }
+.box--2--titulo{
+    padding: 1rem;
+}
+.box--2--text{ 
+    line-height: 1.4rem;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    padding: 0rem 4rem 0rem 1rem;
+}
+@media (max-width:880px){
+    .box--1{          
+        display: block; 
+        max-height: 100%; 
+        min-width: 90%;
+     }  
+     .box--1--img{
+        display: block;
+        width: 18rem;  
+        border-radius: 50%; 
+        margin: 40px  auto; 
+        filter: grayscale(0.8);
+     }
+
+    .box--2{    
+      
+        text-align: center;      
+        max-height: 100%; min-width: 90%;
+        padding: 1rem;
+        padding-bottom: 5rem;
+     }
+    .box--2--titulo{
+        padding: 2.2rem 0rem; 
+    }
+    .box--2--text{ 
+        line-height: 1.7rem;
+        letter-spacing: 0.2px;
+        word-spacing: 0.9px;
+        font-size: 1.3rem;
+        padding: 0.6rem 0rem;
+        
+    }
+   
+}
+@media (max-width:477px){
+    .main-titulo{
+        padding: 3rem 2rem; 
+        font-size: 2.5rem;
+    
+     }
+     .box--1--img{
+        display: block;
+        width: 18rem;  
+        border-radius: 50%; 
+        margin: 40px  auto 40px auto; 
+        filter: grayscale(0.8);
+     }
+}
+@media (max-width:300px){
+    .box--1--img{
+        display: block;
+        width: 16rem;  
+        border-radius: 50%; 
+        margin: 40px  auto; 
+        filter: grayscale(0.8);
+     }
+}

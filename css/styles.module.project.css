@@ -1,0 +1,475 @@
+/*                --------------------------PROJECT--------------------------------               */
+
+.proyectos{ 
+    box-sizing: border-box;
+    min-height: 1100px; 
+    max-width: 1440px;
+    padding: 6rem 0rem 7.5rem 0rem; margin: 0rem auto;    
+
+}
+    .py--subtitulo{
+        text-align: center;
+        padding-top: 3rem!;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--light-orange); 
+    }
+    .py--titulo{
+        display: block; text-align: center; 
+        padding: 0.8rem 0rem 3rem 0rem;
+        color: var(--gray);
+    }
+    .py--conteiner{
+        display: flex; flex-flow: row wrap; 
+        justify-content: center;  
+        /* margin: 0% auto; */
+        
+    }
+        .proyectos--items{
+            display: flex; justify-content: start; align-items: flex-end;
+            height: 20rem; width: 30rem; padding: 2rem; margin: 0rem;
+           /*rgb(248, 233, 24)*/; transition: all 0.5s;
+           cursor: pointer;
+           
+        }
+        .proyectos--items:nth-child(1){
+            background-image: url("../img/cami-2.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+            
+        }
+        .proyectos--items:nth-child(2){
+            background-image: url("../img/bbdd-02.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+     
+        }
+        .proyectos--items:nth-child(3){
+            background-image: url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+         
+        }
+        .proyectos--items:nth-child(4){
+            background-image: url("../img/calculadora-01.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+     
+        }
+    
+        .proyectos--items:nth-child(1):focus {
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/cami-2.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
+        .proyectos--items:nth-child(2):focus {
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/bbdd-02.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
+        .proyectos--items:nth-child(3):focus {
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+            url("../img/bootstrap-0.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
+        .proyectos--items:nth-child(4):focus {
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+      
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/calculadora-01.png"); background-repeat: no-repeat; 
+            background-position: center; background-size: cover;
+        }
+
+        .proyectos--sub{
+            display: flex; flex-direction: column; justify-content: space-between;
+            box-sizing: border-box;
+            height: 100%; width: 100%; padding: 0%; border: none; margin: 0%;
+        }
+        
+        .py--items--titulo{
+            visibility: inherit; 
+            opacity: 0;
+            display: block;
+            width: 100%;
+            padding: 0rem 1rem 0.5rem 2rem;
+            color: var(--red); 
+            transition: all 0.5s;
+            
+        }
+        .py--items--text{ 
+            visibility: inherit;  box-sizing: border-box;
+            opacity: 0;
+            display: block;
+            width: 100%; 
+            padding: 0rem 2rem 2rem 2rem;
+            color: rgb(255, 255, 255); 
+            transition: all 0.5s;
+        }
+        .py--items--link{
+            justify-self: flex-end;
+            visibility: hidden; 
+            opacity: 0;
+            display: none; 
+            box-sizing: border-box;
+            width: 100%;
+            padding: 3rem 2rem 1rem 2rem;
+            color: var(--color2); 
+            transition: all 0.5s;
+        }
+
+        
+        .py-active-titulo{
+            visibility: inherit; 
+            opacity: 1; 
+            padding: 3rem 1rem 0rem 2rem;
+
+        }
+        .py-active-text{
+            visibility: inherit;  
+            opacity: 1; 
+            padding: 0rem 2rem 1rem 2rem;
+        }
+        .py-active-link{
+            display: block;
+            visibility: inherit; 
+            opacity: 1!important; 
+            padding: 3rem 2rem 1rem 2rem;  margin: 0px auto;
+        }
+    
+        .proyectos-active-0{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
+            background-position: center!important; background-size: cover!important;
+        }
+
+        .proyectos-active-1{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/bbdd-02.png")!important; background-repeat: no-repeat!important; 
+            background-position: center!important; background-size: cover!important;
+        }
+
+        .proyectos-active-2{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+            
+            background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+            url("../img/bootstrap-0.png")!important; background-repeat: no-repeat!important; 
+            background-position: center!important; background-size: cover!important;
+
+        }
+
+        .proyectos-active-3{
+            height: 18rem; width: 28rem; padding: 1rem; margin: 2rem;
+      
+            background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+            url("../img/calculadora-01.png")!important; background-repeat: no-repeat!important; 
+            background-position: center!important; background-size: cover!important;
+        }
+
+        @media (max-width:1088px){  
+            
+            .proyectos--items{
+                margin: 1rem 0rem;
+            }
+
+            .proyectos-active-1088-0 {
+                transform: scale( 0.96 )!important;
+                margin: 3rem 2rem;
+                /* height: 18rem; width: 28rem; padding: 1rem; margin: 3rem 2rem; */
+
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+            .proyectos-active-1088-1 {
+                transform: scale( 0.96 )!important;
+                margin: 3rem 2rem;
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/bbdd-02.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+    
+            .proyectos-active-1088-2{
+                transform: scale( 0.96 )!important;
+                margin: 3rem 2rem;
+
+                background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+                url("../img/bootstrap-0.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+    
+            }
+    
+            .proyectos-active-1088-3{
+                transform: scale( 0.96 )!important;
+                margin: 3rem 2rem;
+
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/calculadora-01.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+
+           
+
+       
+        }
+        @media (max-width:590px){
+
+            .proyectos-active-590-0{
+                transform: scale( 0.96 )!important; 
+         
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+
+            .proyectos-active-590-1 {
+                transform: scale( 0.96 )!important;
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/bbdd-02.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+    
+            .proyectos-active-590-2{
+                transform: scale( 0.96 )!important;
+
+                background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+                url("../img/bootstrap-0.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+    
+            }
+    
+            .proyectos-active-590-3{
+                transform: scale( 0.96 )!important;
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/calculadora-01.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+
+
+
+            .proyectos{ 
+                padding: 7rem 0.7rem 7.5rem 0.7rem; 
+                width: 100%;
+            }
+            .proyectos--items{
+                max-height: 18rem; max-width: 28rem; 
+                margin: 1rem 0rem;
+            }
+         
+            /* .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
+                margin: 2rem;
+                
+            }
+            .proyectos--items:nth-child(2):hover,.proyectos--items:nth-child(2):focus {
+                 margin: 2rem ;
+                
+            }
+            .proyectos--items:nth-child(3):hover,.proyectos--items:nth-child(3):focus {
+                margin: 2rem;
+            }
+            .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
+              margin: 2rem; 
+            } */
+
+            .py--items--titulo {
+                padding: 0rem 1rem 0.2rem 0.5rem;
+                box-sizing: border-box;
+            }
+            .py--items--text { 
+                padding: 0rem 1rem 4.5rem 0.5rem;
+                box-sizing: border-box;
+            }
+            .py--items--link{
+                justify-self: flex-end;
+                visibility: hidden; 
+                opacity: 0;
+                display: none; 
+                box-sizing: border-box;
+                max-width: 100%;
+                padding: 3rem 2rem 1rem 2rem;
+                color: var(--color2); 
+                transition: all 0.5s;
+                
+            }
+            .py-active-title-590{
+                visibility: inherit; 
+                opacity: 1; 
+
+                box-sizing: border-box;
+                padding: 2.5rem 1rem 0.5rem 0.5rem;
+                font-size: 1.6rem;
+            }
+            .py-active-text-590{
+                visibility: inherit;  
+                opacity: 1; 
+
+                box-sizing: border-box;
+                padding: 0rem 1rem 5rem 0.5rem;
+                font-size: 0.9rem;
+            }
+            .py-active-link-590{ 
+                box-sizing: border-box;
+                display: block;
+                visibility: inherit; 
+                opacity: 1!important;
+                display: block;
+                max-width: 100%; 
+                padding: 1rem 0.5rem 1rem 0.3rem;  margin: 0px ; 
+                
+                font-size: 0.8rem;
+            }
+            
+        }
+        @media (max-width:280px){
+
+            .proyectos-active-280-0{
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                /* padding: 1rem;  */
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/cami-2.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+              
+            }
+            .proyectos-active-280-1 {
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/bbdd-02.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+    
+            .proyectos-active-280-2{
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+
+                background: linear-gradient(rgb(5,7,12,0.75),rgba(5, 7, 12, 0.75)),
+                url("../img/bootstrap-0.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+    
+            }
+    
+            .proyectos-active-280-3{
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                
+                background: linear-gradient(rgb(5,7,12,0.75),rgb(5,7,12,0.75)),
+                url("../img/calculadora-01.png")!important; background-repeat: no-repeat!important; 
+                background-position: center!important; background-size: cover!important;
+            }
+
+
+            .proyectos{ 
+                padding: 7rem 0.7rem 7.5rem 0.7rem; 
+            }
+            .proyectos--items{
+                max-height: 14rem; max-width: 96%; 
+                margin: 1rem 0rem;
+            }
+/*          
+            .proyectos--items:nth-child(1):hover,.proyectos--items:nth-child(1):focus {
+             
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+              
+                padding: 1rem; 
+                
+            } */
+            /* .proyectos--items:nth-child(2):focus {
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                
+            } */
+            /* .proyectos--items:nth-child(3):focus {
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+            } */
+            /* .proyectos--items:nth-child(4):hover,.proyectos--items:nth-child(4):focus {
+                margin: 2rem auto;
+                max-height: 16rem; max-width: 96%; 
+                
+            } */
+
+            .py--items--titulo {
+                padding: 0rem 1rem 0.2rem 0.5rem; margin: 0%;
+                box-sizing: border-box;
+            }
+            .py--items--text { 
+                padding: 0rem 1rem 4.5rem 0.5rem;
+                box-sizing: border-box;
+            }
+            .py--items--link{
+                justify-self: flex-end;
+                visibility: hidden; 
+                opacity: 0;
+                display: none; 
+                box-sizing: border-box;
+                max-width: 100%;
+                padding: 3rem 2rem 1rem 2rem;
+                color: var(--color2); 
+                transition: all 0.5s;
+                
+            }
+            .py-active-title-280{
+                visibility: inherit; 
+                opacity: 1; 
+
+                box-sizing: border-box;
+                padding: 2rem 1rem 0.5rem 0.3rem;
+                font-size: 1.6rem;
+            }
+            .py-active-text-280{
+                visibility: inherit;  
+                opacity: 1; 
+
+                box-sizing: border-box;
+                height: auto;
+                padding: 0rem 1rem 3rem 0.3rem;
+                font-size: 0.9rem;
+            }
+            .py-active-link-280{ 
+         
+                box-sizing: border-box!important;
+                display: flex; flex-flow: row wrap;
+                visibility: inherit; 
+                opacity: 1!important;
+                display: block;
+                max-width: 100%; height: auto;
+                padding: 0.7rem 0.5rem 1rem 0rem;  margin: 0px ; 
+             
+                font-size: 0.8rem;
+            }
+            /* .proyectos--items:hover .py--items--titulo{
+                box-sizing: border-box;
+                padding: 2rem 1rem 0.5rem 0.3rem;
+                font-size: 1.6rem;
+            } */
+            /* .proyectos--items:hover .py--items--text{
+                box-sizing: border-box;
+                height: auto;
+                padding: 0rem 1rem 3rem 0.3rem;
+                font-size: 0.9rem;
+            } */
+            /* .proyectos--items:hover .py--items--link{ 
+                box-sizing: border-box!important;
+                display: flex; flex-flow: row wrap;
+                visibility: inherit; 
+                opacity: 1!important;
+                display: block;
+                max-width: 100%; height: auto;
+                padding: 1rem 0.5rem 1rem 0rem;  margin: 0px ; 
+             
+                font-size: 0.8rem;
+            } */
+        }
+
